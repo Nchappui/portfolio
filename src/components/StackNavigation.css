@@ -1,0 +1,35 @@
+.stack-navigation {
+  margin: 2rem 0;
+}
+
+.stack-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.stack-tab {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #c71616;
+  background: rgb(209, 17, 17);
+}
+
+.stack-tab:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.stack-tab:active {
+  transform: scale(0.98);
+}
+
+.stack-tab.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
