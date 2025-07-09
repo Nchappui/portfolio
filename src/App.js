@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,6 +8,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
+import MyExperiences from "./pages/MyExperiences";
 
 function AppContent() {
   const location = useLocation();
@@ -18,6 +18,7 @@ function AppContent() {
     const path = location.pathname;
     if (path === "/" || path === "/about") return "about";
     else if (path === "/projects") return "projects";
+    else if (path === "/experiences") return "experiences";
   };
 
   return (
@@ -28,6 +29,7 @@ function AppContent() {
           <Route path="/" element={<AboutMe />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
+          <Route path="/experiences" element={<MyExperiences />} />
         </Routes>
       </main>
     </div>

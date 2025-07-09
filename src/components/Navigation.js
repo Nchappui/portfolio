@@ -9,7 +9,7 @@ const Navigation = () => {
     if (path === "/" || path === "/about") return "about";
     if (path === "/projects") return "projects";
     if (path === "/skills") return "skills";
-    if (path === "/contact") return "contact";
+    if (path === "/experiences") return "experiences";
     return "about";
   };
 
@@ -17,6 +17,7 @@ const Navigation = () => {
 
   const tabs = [
     { key: "about", label: "About me", path: "/about" },
+    { key: "experiences", label: "Experiences", path: "/experiences" },
     { key: "projects", label: "Projets", path: "/projects" },
   ];
 
