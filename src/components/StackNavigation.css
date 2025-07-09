@@ -10,18 +10,15 @@
 
 .stack-tab {
   cursor: pointer;
-  user-select: none;
   transition: all 0.2s;
-  padding: 12px 24px;
+  padding: 20px 60px;
   border-radius: 8px;
-  border: 2px solid #c71616;
-  background: rgb(209, 17, 17);
+  background: #667eea;
 }
 
 .stack-tab:hover {
   transform: scale(1.05);
-  background-color: #f0f0f0;
-  border-color: #ccc;
+  background-color: #2d4dd8;
 }
 
 .stack-tab:active {
@@ -29,7 +26,6 @@
 }
 
 .stack-tab.active {
-  background-color: #667eea;
-  color: white;
-  border-color: #667eea;
+  background-color: #2d4dd8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
