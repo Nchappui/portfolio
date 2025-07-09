@@ -25,10 +25,6 @@ const WebProjects = () => {
   return (
     <section className="my-projects">
       <div className="projects-container">
-        <div className="projects-header">
-          <h1>Web projects</h1>
-        </div>
-
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
