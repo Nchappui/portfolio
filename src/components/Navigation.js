@@ -24,12 +24,13 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <div className="nav-container">
+        {/* 
         <div className="nav-brand">
           <Link to="/" className="brand-link">
             <span className="brand-name">Nolan Chappuis</span>
           </Link>
         </div>
-
+ */}
         <div className="nav-tabs">
           {tabs.map((tab) => (
             <Link
