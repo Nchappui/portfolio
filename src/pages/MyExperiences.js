@@ -1,3 +1,4 @@
+import "./MyExperience.css";
 export default function MyExperiences() {
   return (
     <section className="my-experiences">
