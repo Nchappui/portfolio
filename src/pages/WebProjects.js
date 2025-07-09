@@ -1,6 +1,4 @@
-import React from "react";
 import "./MyProjects.css";
-import StackNavigation from "../components/StackNavigation";
 
 const WebProjects = () => {
   const projects = [
