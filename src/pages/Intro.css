@@ -1,0 +1,23 @@
+.intro-container {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  min-height: 100vh;
+}
+
+.name {
+  font-size: 10vw;
+  color: #ffffff;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.job-title {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 8vw; /* S'adapte aussi à la largeur de l'écran */
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: right;
+}
