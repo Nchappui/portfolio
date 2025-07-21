@@ -2,100 +2,50 @@ import React from "react";
 import "./TimeLine.css";
 
 const TimeLine = () => {
-  const events = [
-    {
-      startYear: "",
-      endYear: "2021",
-      title: "B.Sc. in Computer Science at EPFL",
-      standaloneEvent: true,
-    },
-    {
-      startYear: "2022",
-      endYear: "2023",
-      title: "Highschool Teaching intern",
-      standaloneEvent: false,
-    },
-    {
-      startYear: "",
-      endYear: "2024",
-      title: "M.Sc. in Computer Science at EPFL",
-      standaloneEvent: true,
-    },
-    {
-      startYear: "",
-      endYear: "2024",
-      title: "Teaching diploma at Highschool",
-      standaloneEvent: true,
-    },
+  const timeline = [
     {
       startYear: "2023",
       endYear: "2024",
-      title: "VR software developer intern at Touring Club Suisse",
-      standaloneEvent: false,
+      title: "VR Software Developer Intern",
+      company: "Touring Club Suisse",
+      desc: "Developed immersive VR experiences for tourism applications using Unity and C#. Worked on user interface optimization and performance improvements.",
     },
     {
       startYear: "2024",
       endYear: "2025",
       title: "Military Service",
-      standaloneEvent: false,
+      company: "Swiss Armed Forces",
+      desc: "Completed mandatory military service while developing leadership and teamwork skills. Maintained technical skills through personal projects.",
     },
     {
       startYear: "2025",
-      endYear: "2025",
-      title: "Developer internship at Lab4Tech",
-      standaloneEvent: false,
+      endYear: "Present",
+      title: "Developer Internship",
+      company: "Lab4Tech",
+      desc: "Currently working on full-stack web applications using modern technologies. Contributing to innovative projects in a dynamic startup environment.",
     },
   ];
 
-  // Fonction pour calculer la durée en années
-  const calculateDuration = (startYear, endYear) => {
-    if (!startYear || startYear === "") return 1;
-    const start = parseInt(startYear);
-    const end = parseInt(endYear);
-    return end - start + 1; // +1 pour inclure l'année de début
-  };
-
   return (
-    <div className="horizontal-timeline">
-      <div className="experience-title">
-        <h1>My experiences</h1>
+    <div className="timeline-container">
+      <div className="timeline-title">
+        <h2>My Experiences</h2>
       </div>
-      <div className="timeline-track">
-        {events.map((event, index) => (
-          <div
-            key={index}
-            className={`timeline-step ${
-              event.standaloneEvent ? "standalone" : "duration"
-            }`}
-          >
-            {event.standaloneEvent ? (
-              // Événement standalone : trait vertical + texte au-dessus
-              <>
-                <div className="timeline-title-above">{event.title}</div>
-                <div className="timeline-period-above">{event.endYear}</div>
-                <div className="timeline-line-vertical" />
-              </>
-            ) : (
-              // Événement avec durée : rond proportionnel + texte en dessous
-              <>
-                <div
-                  className="timeline-circle-duration"
-                  style={{
-                    width: `${
-                      calculateDuration(event.startYear, event.endYear) * 200
-                    }px`,
-                    height: "20px",
-                  }}
-                />
-                <div className="timeline-period-below">
-                  {event.startYear} - {event.endYear}
-                </div>
-                <div className="timeline-title-below">{event.title}</div>
-              </>
-            )}
+      <div className="timeline-list">
+        {timeline.map((item, index) => (
+          <div key={index} className="timeline-item">
+            <div className="timeline-date">
+              {item.startYear} - {item.endYear}
+            </div>
+            <div className="timeline-content">
+              <div className="timeline-header">
+                <h3 className="timeline-job-title">{item.title}</h3>
+                <span className="timeline-company">{item.company}</span>
+              </div>
+              <p className="timeline-description">{item.desc}</p>
+            </div>
           </div>
         ))}
-        <div className="timeline-line" />
       </div>
     </div>
   );
