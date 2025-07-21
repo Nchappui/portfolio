@@ -1,0 +1,52 @@
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700;900&display=swap');
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 10vw;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.job-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #4ecdc4;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .name {
+    font-size: 12vw;
+  }
+  
+  .job-title {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 15vw;
+  }
+  
+  .job-title {
+    font-size: 6vw;
+  }
+}

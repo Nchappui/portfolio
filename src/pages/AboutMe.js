@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import Intro from "../components/Intro";
+import Intro from "./Intro";
 
 const AboutMe = () => {
   return (
