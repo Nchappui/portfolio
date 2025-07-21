@@ -1,20 +1,28 @@
 .navigation {
-  background: transparent;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(128, 128, 128, 0.2); /* Background gris transparent */
+  backdrop-filter: blur(10px); /* Effet de flou d'arrière-plan */
+  /*box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);*/
   position: sticky;
-  top: 0;
+  top: 0.5rem; /* Marge en haut */
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 15px; /* Angles ronds */
+  margin: 0 auto; /* Centré horizontalement */
+  max-width: 1200px; /* Largeur maximale de la navigation */
+  width: calc(100% - 1rem); /* Largeur avec marges latérales */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure subtile */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; /* Prend toute la largeur de la navigation */
+  margin: 0;
   display: flex;
   justify-content: space-between; /* Change de center à space-between pour séparer logo et navigation */
   align-items: center;
   padding: 0 2rem;
   height: 70px;
+  border-radius: inherit; /* Hérite des angles ronds de la navigation */
 }
 
 /* Styles pour la marque/logo */
@@ -84,6 +92,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navigation {
+    top: 0.25rem; /* Marge réduite en haut sur tablette */
+    width: calc(100% - 0.5rem); /* Marges latérales réduites */
+    border-radius: 12px; /* Angles légèrement moins ronds */
+  }
+  
   .nav-container {
     padding: 0 1rem;
   }
@@ -104,6 +118,12 @@
 }
 
 @media (max-width: 480px) {
+  .navigation {
+    top: 0.125rem; /* Marge encore plus réduite en haut sur mobile */
+    width: calc(100% - 0.25rem); /* Marges latérales encore plus réduites */
+    border-radius: 10px; /* Angles plus petits sur mobile */
+  }
+  
   .nav-container {
     height: 60px;
   }
