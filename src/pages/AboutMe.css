@@ -1,6 +1,6 @@
 /* Wrapper global pour une page AboutMe uniforme */
 .aboutme-page-wrapper {
-  background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  background: #cfc4b7 ;
   min-height: 100vh; /* Réduit à 100vh + contenu naturel */
 }
 
@@ -14,16 +14,19 @@
 }
 
 .about-me {
+  background: #cfc4b7;
   padding: 0 2rem 8rem; /* Padding sans compensation pour la navigation */
   min-height: 100vh; /* Hauteur complète de l'écran */
   /* background supprimé - utilise maintenant le background du wrapper */
 }
 
 .about-container {
-  max-width: 1200px;
+  background: #e0d3c4;
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 120px; /* Ajusté pour la navigation fixe */
   padding-bottom: 2rem; /* Ajout d'espacement en bas */
+  border-radius: 10%;
 }
 
 .about-header {
@@ -38,12 +41,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
 .image-placeholder {
   width: 300px;
   aspect-ratio: 1/1.21;
-  background: linear-gradient(135deg, #09090a 0%, #7a787c 100%);
+  background: linear-gradient(135deg, #09090a 0%, #5C5248  100%);
   border-radius: 90%;
   display: flex;
   align-items: center;
@@ -53,37 +57,30 @@
   transition: transform 0.3s ease;
 }
 
-.image-placeholder:hover {
-  transform: scale(1.05);
+.about-intro {
+  margin-right: 50px;
 }
 
 .about-intro h1 {
-  font-size: 3rem;
-  color: #ffffff;
+  font-size: 7rem;
+  color: #5C5248 ;
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .highlight {
-  background: linear-gradient(135deg, #f1ef58 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #222222 0%, #5C5248  100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.subtitle {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
-}
-
 .description {
-  font-size: 1.1rem;
-  color: #ffffff;
+  font-size: 1.5rem;
+  color: #222222;
   line-height: 1.6;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .about-details {
