@@ -66,7 +66,7 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <a href="/" onClick={handleLogoClick} className="brand-link">
-            <img src="/LogoNC.png" alt="Nolan Chappuis Logo" className="brand-logo" color="white" />
+            <img src="/images/LogoNC.png" alt="Nolan Chappuis Logo" className="brand-logo" color="white" />
           </a>
         </div>
         <div className="nav-tabs">

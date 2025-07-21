@@ -12,7 +12,7 @@ const AboutMe = () => {
         
         <div className="about-header">
           <div className="profile-image">
-            <div className="image-placeholder">👨‍💻</div>
+            <img src="/images/photopro.png" alt="Nolan Chappuis" className="image-placeholder" />
           </div>
           <div className="about-intro">
             <h1>
