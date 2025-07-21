@@ -16,8 +16,6 @@
 .about-me {
   background: #cfc4b7;
   padding: 0 2rem 8rem; /* Padding sans compensation pour la navigation */
-  min-height: 100vh; /* Hauteur complète de l'écran */
-  /* background supprimé - utilise maintenant le background du wrapper */
 }
 
 .about-container {
@@ -26,7 +24,7 @@
   margin: 0 auto;
   padding-top: 120px; /* Ajusté pour la navigation fixe */
   padding-bottom: 2rem; /* Ajout d'espacement en bas */
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 .about-header {
