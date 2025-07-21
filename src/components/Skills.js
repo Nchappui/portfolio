@@ -4,10 +4,10 @@ import './Skills.css';
 const Skills = () => {
 
   const skills = [
-    { field: "Software Development",  desc: "lorem ipsum...", keywords: [ "Python", "C#", "Java" ]},
-    { field: "UI/UX Design",  desc: "lorem ipsum...", keywords: [ "JavaScript", "CSS", "React", "HTML", "Figma", "Adobe XD", "Photoshop", "Illustrator", "Sketch",  "Wireframing", "Prototyping" ]},
-    { field: "Mobile Development",  desc: "lorem ipsum...", keywords: [ "Kotlin", "React Native", "Andoid Studio" ]},
-    { field: "Game Development",  desc: "lorem ipsum...", keywords: [ "Unity", "C#", "Virtual Reality" ]},
+    { field: "Software Development",  desc: "Various programming languages and frameworks. Very good knowledge of algorithms and data structures. Certified Scrum Developer.", keywords: [ "Python", "C#", "Java" ]},
+    { field: "UI/UX Design",  desc: "Proficient in creating user-centered designs through research and testing.", keywords: [ "JavaScript", "CSS", "React", "HTML"]},
+    { field: "Mobile Development",  desc: "Skilled in building mobile applications for Android and iOS using modern frameworks.", keywords: [ "Kotlin", "React Native", "Android Studio" ]},
+    { field: "Game Development",  desc: "Experienced in developing interactive games using Unity and C#. Love creating immersive experiences.", keywords: [ "Unity", "C#", "Virtual Reality" ]},
   ];
 
   return (
