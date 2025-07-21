@@ -4,15 +4,6 @@ import "./Intro.css";
 function Intro() {
   const [scrollY, setScrollY] = useState(0);
   
-  // CHANGEZ CE NUMÉRO POUR TESTER DIFFÉRENTS STYLES (1-5)
-  // style-1: Gradient animé avec glow
-  // style-2: Néon cyberpunk
-  // style-3: Effet 3D avec ombres
-  // style-4: Hologramme avec scan lines
-  // style-5: Glass/frosted effect
-  // Laissez vide pour le style par défaut
-  const currentStyle = "style-3"; // Changez ici pour tester!
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -43,7 +34,7 @@ function Intro() {
     <section className="intro">
       <div className="intro-container">
         <div 
-          className={`name ${currentStyle}`}
+          className="name"
           style={{ 
             transform: nameTransform,
             opacity: opacity
@@ -52,7 +43,7 @@ function Intro() {
           <p>Nolan Chappuis</p>
         </div>
         <div 
-          className={`job-title ${currentStyle}`}
+          className="job-title"
           style={{ 
             transform: titleTransform,
             opacity: opacity

@@ -1,3 +1,6 @@
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Black+Ops+One&family=Audiowide&family=Bungee&family=Fredoka+One:wght@400&family=Righteous&family=Monoton&family=Permanent+Marker&display=swap');
+
 .intro-container {
   padding: 2rem;
   text-align: center;
@@ -7,84 +10,21 @@
   position: relative;
 }
 
-/* STYLE 1: Gradient animé avec glow effect */
-.name.style-1 {
-  position: fixed;
-  top: 20vh;
-  left: 2rem;
-  font-size: 10vw;
-  font-weight: 900;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease infinite;
-  text-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
 
-.job-title.style-1 {
-  position: fixed;
-  top: auto;
-  bottom: 20vh;
-  right: 2rem;
-  font-size: 8vw;
+/* POLICE 2: Rajdhani - Modern et clean */
+.name{
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(78, 205, 196, 0.3),
-    0 0 30px rgba(69, 183, 209, 0.2);
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
+  letter-spacing: 0.02em;
 }
 
-/* STYLE 2: Effet néon cyberpunk */
-.name.style-2 {
-  position: fixed;
-  top: 20vh;
-  left: 2rem;
-  font-size: 10vw;
-  font-weight: 900;
-  color: #00ff88;
-  text-shadow: 
-    0 0 5px #00ff88,
-    0 0 10px #00ff88,
-    0 0 15px #00ff88,
-    0 0 20px #00ff88,
-    0 0 35px #00ff88,
-    0 0 40px #00ff88;
-  animation: neonFlicker 2s infinite alternate;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
+.job-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
-.job-title.style-2 {
-  position: fixed;
-  top: auto;
-  bottom: 20vh;
-  right: 2rem;
-  font-size: 8vw;
-  font-weight: 700;
-  color: #ff0080;
-  text-shadow: 
-    0 0 5px #ff0080,
-    0 0 10px #ff0080,
-    0 0 15px #ff0080,
-    0 0 20px #ff0080;
-  animation: neonFlicker 2.5s infinite alternate-reverse;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
-
-/* STYLE 3: Effet 3D avec ombre portée */
-.name.style-3 {
+.name {
   position: fixed;
   top: 20vh;
   left: 2rem;
@@ -107,7 +47,7 @@
   z-index: 10;
 }
 
-.job-title.style-3 {
+.job-title {
   position: fixed;
   top: auto;
   bottom: 20vh;
@@ -131,101 +71,6 @@
   z-index: 10;
 }
 
-/* STYLE 4: Effet hologramme avec lignes de scan */
-.name.style-4 {
-  position: fixed;
-  top: 20vh;
-  left: 2rem;
-  font-size: 10vw;
-  font-weight: 900;
-  color: rgba(0, 255, 255, 0.8);
-  text-shadow: 
-    0 0 10px #00ffff,
-    0 0 20px #00ffff,
-    0 0 40px #00ffff;
-  position: relative;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
-
-.name.style-4::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    transparent 0%,
-    rgba(0, 255, 255, 0.1) 49%,
-    rgba(0, 255, 255, 0.3) 50%,
-    rgba(0, 255, 255, 0.1) 51%,
-    transparent 100%
-  );
-  background-size: 100% 4px;
-  animation: scanLines 2s linear infinite;
-  pointer-events: none;
-}
-
-.job-title.style-4 {
-  position: fixed;
-  top: auto;
-  bottom: 20vh;
-  right: 2rem;
-  font-size: 8vw;
-  font-weight: 700;
-  color: rgba(255, 0, 255, 0.8);
-  text-shadow: 
-    0 0 10px #ff00ff,
-    0 0 20px #ff00ff,
-    0 0 40px #ff00ff;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
-
-/* STYLE 5: Effet glass/frosted avec backdrop-filter */
-.name.style-5 {
-  position: fixed;
-  top: 20vh;
-  left: 2rem;
-  font-size: 10vw;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 0.2em 0.4em;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
-
-.job-title.style-5 {
-  position: fixed;
-  top: auto;
-  bottom: 20vh;
-  right: 2rem;
-  font-size: 8vw;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(78, 205, 196, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 0.2em 0.4em;
-  border-radius: 20px;
-  border: 1px solid rgba(78, 205, 196, 0.3);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(78, 205, 196, 0.2);
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
 
 /* ANIMATIONS */
 @keyframes gradientShift {
@@ -258,32 +103,4 @@
 @keyframes scanLines {
   0% { background-position: 0 0; }
   100% { background-position: 0 100%; }
-}
-
-/* Style par défaut (actuel) */
-.name {
-  position: fixed;
-  top: 20vh;
-  left: 2rem;
-  font-size: 10vw;
-  color: #ffffff;
-  margin-bottom: 0;
-  text-align: left;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
-}
-
-.job-title {
-  position: fixed;
-  top: auto;
-  bottom: 20vh;
-  right: 2rem;
-  font-size: 8vw;
-  color: #ffffff;
-  margin-bottom: 0;
-  text-align: right;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  z-index: 10;
 }
