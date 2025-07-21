@@ -4,11 +4,12 @@
 .intro-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   text-align: center;
   padding: 2rem;
+  padding-top: 10vh; /* Positionner le texte plus haut */
 }
 
 .name {
@@ -28,25 +29,56 @@
   color: #4ecdc4;
   margin: 0;
   letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dot {
+  color: #4ecdc4;
+  font-size: 1.5vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .intro-container {
+    padding-top: 20vh;
+  }
+  
   .name {
     font-size: 12vw;
   }
   
   .job-title {
     font-size: 5vw;
+    gap: 0.8rem;
+  }
+  
+  .dot {
+    font-size: 4vw;
   }
 }
 
 @media (max-width: 480px) {
+  .intro-container {
+    padding-top: 15vh;
+  }
+  
   .name {
     font-size: 15vw;
   }
   
   .job-title {
     font-size: 6vw;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  
+  .dot {
+    display: none; /* Cacher les ronds sur très petits écrans */
   }
 }

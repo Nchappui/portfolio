@@ -6,10 +6,17 @@ function Intro() {
     <section className="intro">
       <div className="intro-container">
         <div className="name">
-          <p>Nolan Chappuis</p>
+          <p>NOLAN</p>
+        </div>
+        <div className="name">
+          <p>CHAPPUIS</p>
         </div>
         <div className="job-title">
-          <p>Software Engineer . Full Stack . App Developer</p>
+          <span>Software Engineer</span>
+          <span className="dot">●</span>
+          <span>Full Stack</span>
+          <span className="dot">●</span>
+          <span>App Developer</span>
         </div>
       </div>
     </section>
