@@ -1,6 +1,7 @@
 import TimeLine from "../components/TimeLine";
 import "./AboutMe.css";
-import Intro from "./Intro";
+import Intro from "../components/Intro";
+import Skills from "../components/Skills";
 
 const AboutMe = () => {
   return (
@@ -30,6 +31,11 @@ const AboutMe = () => {
         </div>
         </div>
       </section>
+            <section id="skills-section">
+        <div className="skills-container">
+          <Skills />
+        </div>
+        </section>
       <section id="timeline-section">
         <div className="timeline-container">
           <TimeLine />
