@@ -16,14 +16,6 @@
   margin: 0;
 }
 
-.timeline-track {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 120rem;
-  position: relative;
-}
-
 .timeline-list {
   display: flex;
   flex-direction: column;
@@ -44,15 +36,6 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.timeline-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  min-width: 120px; /* Augmenté pour accommoder "2021 - 2022" */
-  flex: 1;
-}
-
 .timeline-date {
   flex-shrink: 0;
   width: 120px;
@@ -67,62 +50,6 @@
   font-size: 0.875rem;
   margin-top: 0.25rem;
   color: #4a4440;
-}
-
-/* Styles pour les événements standalone (trait vertical) */
-.timeline-step.standalone {
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline-title-above {
-  font-size: 0.875rem;
-  color: #4a4440;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  max-width: 150px;
-  word-wrap: break-word;
-}
-
-.timeline-period-above {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.timeline-line-vertical {
-  width: 2px;
-  height: 20px;
-  background-color: #5c5248;
-  z-index: 10;
-}
-
-/* Styles pour les événements avec durée (rond proportionnel) */
-.timeline-step.duration {
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline-circle-duration {
-  border-radius: 50%;
-  background-color: #5c5248;
-  z-index: 10;
-  min-width: 20px;
-  min-height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline-period-below {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-  margin-top: 0.5rem;
-  text-align: center;
-  white-space: nowrap;
 }
 
 .timeline-content {
