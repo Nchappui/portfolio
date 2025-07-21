@@ -9,7 +9,8 @@
   height: 100vh;
   text-align: center;
   padding: 2rem;
-  padding-top: 10vh; /* Positionner le texte plus haut */
+  padding-top: 15vh; /* Augmenté pour compenser la navigation fixe */
+  position: relative;
 }
 
 .name {
@@ -46,7 +47,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .intro-container {
-    padding-top: 20vh;
+    padding-top: 25vh; /* Ajusté pour mobile avec navigation fixe */
   }
   
   .name {
@@ -61,11 +62,19 @@
   .dot {
     font-size: 4vw;
   }
+  
+  .scroll-indicator {
+    bottom: 8vh;
+  }
+  
+  .scroll-text {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .intro-container {
-    padding-top: 15vh;
+    padding-top: 20vh; /* Ajusté pour très petits écrans */
   }
   
   .name {
@@ -80,5 +89,85 @@
   
   .dot {
     display: none; /* Cacher les ronds sur très petits écrans */
+  }
+  
+  .scroll-indicator {
+    bottom: 10vh;
+  }
+  
+  .mouse {
+    width: 20px;
+    height: 32px;
+  }
+  
+  .wheel {
+    width: 3px;
+    height: 6px;
+  }
+  
+  .scroll-text {
+    font-size: 9px;
+  }
+}
+
+/* Indicateur de scroll - Souris animée */
+.scroll-indicator {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 2s infinite;
+}
+
+.mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid #4ecdc4;
+  border-radius: 12px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background-color: #4ecdc4;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-wheel 2s infinite;
+}
+
+
+/* Animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@keyframes scroll-wheel {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  50% {
+    top: 16px;
+    opacity: 0.5;
+  }
+  100% {
+    top: 24px;
+    opacity: 0;
   }
 }

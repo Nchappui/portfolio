@@ -1,6 +1,7 @@
 .skills-container {
   min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  padding-top: 120px; /* Ajouté padding-top pour la navigation fixe */
+  background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
   /*
   background: radial-gradient(
       ellipse at 30% 40%,

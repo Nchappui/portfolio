@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* Scroll fluide pour toute l'application */
+}
+
 body, html {
   background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
   margin: 0;

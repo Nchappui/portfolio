@@ -3,7 +3,7 @@ import "./Intro.css";
 
 function Intro() {
   return (
-    <section className="intro">
+    <section id="intro" className="intro">
       <div className="intro-container">
         <div className="name">
           <p>NOLAN</p>
@@ -17,6 +17,13 @@ function Intro() {
           <span>Full Stack</span>
           <span className="dot">●</span>
           <span>App Developer</span>
+        </div>
+        
+        {/* Indicateur de scroll */}
+        <div className="scroll-indicator">
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
         </div>
       </div>
     </section>

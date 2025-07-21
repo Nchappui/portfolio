@@ -4,16 +4,25 @@
   min-height: 100vh; /* Réduit à 100vh + contenu naturel */
 }
 
+/* Sections avec IDs pour la navigation */
+#intro-section {
+  scroll-margin-top: 0; /* Pas de marge pour l'intro */
+}
+
+#about-section {
+  scroll-margin-top: 100px; /* Marge pour compenser la navigation fixe */
+}
+
 .about-me {
-  padding: 0 2rem 8rem; /* Augmentation significative du padding-bottom */
-  min-height: calc(100vh - 70px); /* Hauteur ajustée selon la navigation (70px) */
+  padding: 0 2rem 8rem; /* Padding sans compensation pour la navigation */
+  min-height: 100vh; /* Hauteur complète de l'écran */
   /* background supprimé - utilise maintenant le background du wrapper */
 }
 
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 4rem; /* Augmentation de l'espacement en haut */
+  padding-top: 120px; /* Ajusté pour la navigation fixe */
   padding-bottom: 2rem; /* Ajout d'espacement en bas */
 }
 

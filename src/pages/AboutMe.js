@@ -4,8 +4,10 @@ import Intro from "./Intro";
 const AboutMe = () => {
   return (
     <div className="aboutme-page-wrapper">
-      <Intro />
-      <section className="about-me">
+      <section id="intro-section">
+        <Intro />
+      </section>
+      <section id="about-section" className="about-me">
         <div className="about-container">
         
         <div className="about-header">
@@ -50,8 +52,8 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
     </div>
   );
 };

@@ -2,14 +2,15 @@
   background: rgba(128, 128, 128, 0.2); /* Background gris transparent */
   backdrop-filter: blur(10px); /* Effet de flou d'arrière-plan */
   /*box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);*/
-  position: sticky;
+  position: fixed; /* Changé de sticky à fixed */
   top: 1rem; /* Marge en haut */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer horizontalement */
   z-index: 1000;
   box-sizing: border-box;
   border-radius: 15px; /* Angles ronds */
-  margin: 0 auto; /* Centré horizontalement */
   max-width: 1200px; /* Largeur maximale de la navigation */
-  width: calc(100% - 1rem); /* Largeur avec marges latérales */
+  width: calc(100% - 2rem); /* Largeur avec marges latérales */
   border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure subtile */
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
