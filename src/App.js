@@ -8,8 +8,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
-import MyExperiences from "./pages/MyExperiences";
-import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 function AppContent() {
   const location = useLocation();
@@ -19,8 +18,6 @@ function AppContent() {
     const path = location.pathname;
     if (path === "/") return "about";
     else if (path === "/projects") return "projects";
-    else if (path === "/experiences") return "experiences";
-    else if (path === "/skills") return "skills";
   };
 
   return (
@@ -30,8 +27,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
-          <Route path="/experiences" element={<MyExperiences />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
     </div>

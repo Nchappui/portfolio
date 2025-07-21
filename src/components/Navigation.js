@@ -56,9 +56,8 @@ const Navigation = () => {
 
   const tabs = [
     { key: "about", label: "About me", path: "/", onClick: handleAboutClick },
-    { key: "experiences", label: "Experiences", path: "/experiences" },
-    { key: "projects", label: "Projets", path: "/projects" },
-    { key: "skills", label: "Skills", path: "/skills" },
+    { key: "projects", label: "Projects", path: "/projects" },
+    { key: "contact", label: "Contact", path: "/contact" },
   ];
 
   return (
