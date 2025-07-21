@@ -7,7 +7,7 @@ const Navigation = () => {
 
   const getActiveTab = () => {
     const path = location.pathname;
-    if (path === "/" || path === "/about") return "about";
+    if (path === "/") return "about";
     if (path === "/projects") return "projects";
     if (path === "/skills") return "skills";
     if (path === "/experiences") return "experiences";
@@ -36,7 +36,7 @@ const Navigation = () => {
   // Fonction pour gérer le clic sur About Me
   const handleAboutClick = (e) => {
     e.preventDefault();
-    if (location.pathname === "/" || location.pathname === "/about") {
+    if (location.pathname === "/") {
       // Si on est déjà sur la page, scroller vers la section about
       const aboutSection = document.getElementById("about-section");
       if (aboutSection) {
@@ -44,7 +44,7 @@ const Navigation = () => {
       }
     } else {
       // Sinon, naviguer vers la page et scroller vers la section about
-      navigate("/about");
+      navigate("/");
       setTimeout(() => {
         const aboutSection = document.getElementById("about-section");
         if (aboutSection) {
@@ -55,7 +55,7 @@ const Navigation = () => {
   };
 
   const tabs = [
-    { key: "about", label: "About me", path: "/about", onClick: handleAboutClick },
+    { key: "about", label: "About me", path: "/", onClick: handleAboutClick },
     { key: "experiences", label: "Experiences", path: "/experiences" },
     { key: "projects", label: "Projets", path: "/projects" },
     { key: "skills", label: "Skills", path: "/skills" },

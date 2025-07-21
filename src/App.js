@@ -17,7 +17,7 @@ function AppContent() {
   // Détermine l'onglet actif basé sur l'URL
   const getActiveTab = () => {
     const path = location.pathname;
-    if (path === "/" || path === "/about") return "about";
+    if (path === "/") return "about";
     else if (path === "/projects") return "projects";
     else if (path === "/experiences") return "experiences";
     else if (path === "/skills") return "skills";
@@ -28,15 +28,7 @@ function AppContent() {
       <Navigation activeTab={getActiveTab()} />
       <main className="main-content">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                <AboutMe />
-              </div>
-            }
-          />
-          <Route path="/about" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
           <Route path="/experiences" element={<MyExperiences />} />
           <Route path="/skills" element={<Skills />} />
