@@ -1,9 +1,13 @@
 import "./AboutMe.css";
+import Intro from "./Intro";
 
 const AboutMe = () => {
   return (
-    <section className="about-me">
-      <div className="about-container">
+    <div className="aboutme-page-wrapper">
+      <Intro />
+      <section className="about-me">
+        <div className="about-container">
+        
         <div className="about-header">
           <div className="profile-image">
             <div className="image-placeholder">👨‍💻</div>
@@ -48,6 +52,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

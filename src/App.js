@@ -9,7 +9,7 @@ import Navigation from "./components/Navigation";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
 import MyExperiences from "./pages/MyExperiences";
-import Intro from "./pages/Intro";
+import Skills from "./pages/Skills";
 
 function AppContent() {
   const location = useLocation();
@@ -20,6 +20,7 @@ function AppContent() {
     if (path === "/" || path === "/about") return "about";
     else if (path === "/projects") return "projects";
     else if (path === "/experiences") return "experiences";
+    else if (path === "/skills") return "skills";
   };
 
   return (
@@ -31,7 +32,6 @@ function AppContent() {
             path="/"
             element={
               <div>
-                <Intro />
                 <AboutMe />
               </div>
             }
@@ -39,6 +39,7 @@ function AppContent() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
           <Route path="/experiences" element={<MyExperiences />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </main>
     </div>
