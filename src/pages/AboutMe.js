@@ -1,3 +1,4 @@
+import TimeLine from "../components/TimeLine";
 import "./AboutMe.css";
 import Intro from "./Intro";
 
@@ -19,7 +20,7 @@ const AboutMe = () => {
               Hi I am <span className="highlight">Nolan</span>
             </h1>
             <p className="description">
-                I am a Swiss developer based near Lausanne.<br /><br />
+                I am a 25 years old Swiss developer based near Lausanne.<br /><br />
 
                 I enjoy designing smooth user experiences and bringing ideas to life through clean, functional code.<br /><br />
 
@@ -29,6 +30,11 @@ const AboutMe = () => {
         </div>
         </div>
       </section>
+      <section id="timeline-section">
+        <div className="timeline-container">
+          <TimeLine />
+        </div>
+        </section>
     </div>
   );
 };
