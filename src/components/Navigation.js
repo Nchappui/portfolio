@@ -19,6 +19,7 @@ const Navigation = () => {
     { key: "about", label: "About me", path: "/about" },
     { key: "experiences", label: "Experiences", path: "/experiences" },
     { key: "projects", label: "Projets", path: "/projects" },
+    { key: "skills", label: "Skills", path: "/skills" },
   ];
 
   return (

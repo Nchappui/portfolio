@@ -1,0 +1,54 @@
+.skills-container {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #2c3e50, #3498db);
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skills-left {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  font-size: 6vw;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.skills-center {
+  font-size: 12vw;
+  color: #ffffff;
+  font-weight: 900;
+  text-align: center;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skills-right {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  font-size: 6vw;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-left,
+  .skills-right {
+    font-size: 8vw;
+  }
+  
+  .skills-center {
+    font-size: 15vw;
+  }
+}
