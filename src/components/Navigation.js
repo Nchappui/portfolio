@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <Link to="/" className="brand-link">
-            <img src="/LogoNC.png" alt="Nolan Chappuis Logo" className="brand-logo" />
+            <img src="/LogoNC.png" alt="Nolan Chappuis Logo" className="brand-logo" color="white" />
           </Link>
         </div>
         <div className="nav-tabs">

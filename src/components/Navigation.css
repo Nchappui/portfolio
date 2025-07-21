@@ -3,7 +3,7 @@
   backdrop-filter: blur(10px); /* Effet de flou d'arrière-plan */
   /*box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);*/
   position: sticky;
-  top: 0.5rem; /* Marge en haut */
+  top: 1rem; /* Marge en haut */
   z-index: 1000;
   box-sizing: border-box;
   border-radius: 15px; /* Angles ronds */
