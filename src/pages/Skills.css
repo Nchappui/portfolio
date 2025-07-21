@@ -1,6 +1,29 @@
 .skills-container {
   min-height: 100vh;
-  background: linear-gradient(45deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  /*
+  background: radial-gradient(
+      ellipse at 30% 40%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse at 70% 10%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 85% 90%,
+      rgba(100, 100, 100, 0.7) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 5% 60%,
+      rgba(200, 200, 200, 0.4) 0%,
+      transparent 40%
+    ),
+    linear-gradient(135deg, #1a1a1a, #4a4a4a);
+    */
   position: relative;
   overflow-x: hidden;
   display: flex;
