@@ -2,7 +2,7 @@ import React from "react";
 import "./Experiences.css";
 
 const Experiences = () => {
-  const timeline = [
+  const experience = [
     {
       startYear: "2025",
       endYear: "2025",
@@ -35,22 +35,22 @@ const Experiences = () => {
   ];
 
   return (
-    <div className="timeline-container">
-      <div className="timeline-title">
+    <div className="experience-container">
+      <div className="experience-title">
         <h2>My Experiences</h2>
       </div>
-      <div className="timeline-list">
-        {timeline.map((item, index) => (
-          <div key={index} className="timeline-item">
-            <div className="timeline-date">
+      <div className="experience-list">
+        {experience.map((item, index) => (
+          <div key={index} className="experience-item">
+            <div className="experience-date">
               {item.startYear} - {item.endYear}
             </div>
-            <div className="timeline-content">
-              <div className="timeline-header">
-                <h3 className="timeline-job-title">{item.title}</h3>
-                <span className="timeline-company">{item.company}</span>
+            <div className="experience-content">
+              <div className="experience-header">
+                <h3 className="experience-job-title">{item.title}</h3>
+                <span className="experience-company">{item.company}</span>
               </div>
-              <p className="timeline-description">{item.desc}</p>
+              <p className="experience-description">{item.desc}</p>
             </div>
           </div>
         ))}
