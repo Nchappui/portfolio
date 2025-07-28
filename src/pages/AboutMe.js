@@ -3,6 +3,7 @@ import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import Experiences from "../components/Experiences";
 import DiplomasAndPrices from "../components/DiplomasAndPrices";
+import Footer from "../components/Footer";
 
 const AboutMe = () => {
   return (
@@ -53,6 +54,11 @@ const AboutMe = () => {
       <section id="diplomas-section">
         <div className="diplomas-container">
           <DiplomasAndPrices />
+        </div>
+      </section>
+      <section id="footer-section">
+        <div className="footer-container">
+          <Footer />
         </div>
       </section>
     </div>
