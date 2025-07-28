@@ -1,8 +1,8 @@
-import TimeLine from "../components/Experiences";
 import "./AboutMe.css";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import Experiences from "../components/Experiences";
+import DiplomasAndPrices from "../components/DiplomasAndPrices";
 
 const AboutMe = () => {
   return (
@@ -48,6 +48,11 @@ const AboutMe = () => {
       <section id="timeline-section">
         <div className="timeline-container">
           <Experiences />
+        </div>
+      </section>
+      <section id="diplomas-section">
+        <div className="diplomas-container">
+          <DiplomasAndPrices />
         </div>
       </section>
     </div>
