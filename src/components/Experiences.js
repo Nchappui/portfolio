@@ -1,7 +1,7 @@
 import React from "react";
-import "./TimeLine.css";
+import "./Experiences.css";
 
-const TimeLine = () => {
+const Experiences = () => {
   const timeline = [
     {
       startYear: "2025",
@@ -59,4 +59,4 @@ const TimeLine = () => {
   );
 };
 
-export default TimeLine;
+export default Experiences;
