@@ -1,0 +1,99 @@
+.contact-page {
+  min-height: 100vh; /* pour coller le footer en bas */
+  display: flex;
+  flex-direction: column;
+}
+
+.empty {
+  flex: 1;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contactFormContainer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1600px; /* max 1600px */
+  background: #e0d3c4; /* couleurs existantes */
+  border-radius: 15px;
+  padding: 2rem 3rem;
+  margin: 4rem auto 2rem; /* centre horizontalement, espace au-dessus */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.contact-title h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+/* Formulaire */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 2rem;
+}
+
+.contact-form .full {
+  grid-column: 1 / -1; /* champs sur toute la largeur */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #222222;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.contact-actions .submit-btn {
+  background: #222222;
+  color: #e0d3c4;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-actions .submit-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-title h2 {
+    font-size: 3.5rem;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}

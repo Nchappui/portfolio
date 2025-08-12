@@ -8,8 +8,9 @@ html {
   scroll-behavior: smooth; /* Scroll fluide pour toute l'application */
 }
 
-body, html {
-  background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+body,
+html {
+  background: #cfc4b7;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +22,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background:linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  background: #cfc4b7;
 }
 
 .main-content {
