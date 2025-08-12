@@ -8,7 +8,7 @@ const Contact = () => {
       <main className="contactContainer">
         <section className="contactFormContainer">
           <div className="contact-title">
-            <h2>Contact</h2>
+            <h2>Feel free to contact me !</h2>
           </div>
 
           <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
