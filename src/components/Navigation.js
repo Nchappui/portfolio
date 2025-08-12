@@ -9,8 +9,7 @@ const Navigation = () => {
     const path = location.pathname;
     if (path === "/") return "about";
     if (path === "/projects") return "projects";
-    if (path === "/skills") return "skills";
-    if (path === "/experiences") return "experiences";
+    if (path === "/contact") return "contact";
     return "about";
   };
 
@@ -65,11 +64,16 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <a href="/" onClick={handleLogoClick} className="brand-link">
-            <img src="/images/LogoNC.png" alt="Nolan Chappuis Logo" className="brand-logo" color="white" />
+            <img
+              src="/images/LogoNC.png"
+              alt="Nolan Chappuis Logo"
+              className="brand-logo"
+              color="white"
+            />
           </a>
         </div>
         <div className="nav-tabs">
-          {tabs.map((tab) => (
+          {tabs.map((tab) =>
             tab.onClick ? (
               <a
                 key={tab.key}
@@ -88,7 +92,7 @@ const Navigation = () => {
                 {tab.label}
               </Link>
             )
-          ))}
+          )}
         </div>
       </div>
     </nav>
